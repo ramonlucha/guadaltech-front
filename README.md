@@ -2,69 +2,45 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Funcionamiento
 
-In the project directory, you can run:
+El funcionamiento simplemente hace una consulta al API utilizando hooks guardamos
+y gestionamos las variables entre componentes. Dicho funcionamiento debe ser que 
+si el campo esta vacio se efectuara una busqueda general es decir nos mostrará
+todos los becarios que nos devuelva el API. En el caso que rellenemos el campo 
+tendremos 2 posibilidades que exista ese id y nos devuelva solo un becario o que 
+no exista y nos devuelva un error.
+### API
 
-### `npm start`
+El API facilitado por la empresa https://guadaltech-fullstack.herokuapp.com/api/ 
+para realizar dicho test.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `Bootswatch`
 
-### `npm test`
+Al realizar estas pruebas y proyectos intento siempre probar herramientas nuevas
+en este caso informandome un poco acerca de herramientas como bootstrap encontre
+bootswatch  https://bootswatch.com/ que practicamente en funcionalidad y demas es
+para lo mismo que bootstrap con la diferencias que tiene mas variedad a la hora
+de permitirnos elegir colores.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Componentes
 
-### `npm run build`
+Hemos decidido poner en este caso 3 componentes entre los cuales pasamos algunas variables a traves de los hooks
+Formulario para la parte del buscador y el boton, Becarios para la lista de becarios aunqnue en ocasiones es solo
+1 y Error para que en el caso de que la busqueda no sea fructuosa aparezca un error y se muestre.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Implementaciones futuras
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Las implementaciones futuras seria a corto plazo añadir 2 columnas al listado de becarios con 2 iconos uno de 
+papelera que al pulsarlo permite eliminar ese becario con un ventana emergente que permita confirmar si se quiere
+realizar la eliminación y el otro icono una lupa que despliegue un formulario con todos los datos de un becario y
+que permita la modificación con un boton de guardar para realizar la modificación de cualquier becario si fuera
+necesasrio.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Conclusion
 
-### `npm run eject`
+Proyecto sencillo basico y minimalista que nos permite ver que con poco codigo y usando alguns frameworks o librerias 
+se pueden hacer grandes cosas con React.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
